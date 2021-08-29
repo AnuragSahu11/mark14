@@ -1,0 +1,17 @@
+body{background-color: whitesmoke;
+    height: 100vh;
+}
+.num-inputs{
+    width:min-content;
+    margin-top: 10px;
+}
+.div-button{
+    margin-top: 50px;
+}
+.inputs{
+    margin-top: 50px;
+}
+.outputs{
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
