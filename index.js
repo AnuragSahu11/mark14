@@ -14,7 +14,13 @@ button.addEventListener("click", () => {
     quantity = 1;
   }
   if (bPrice && sPrice) {
-    if (bPrice > sPrice) {
+    if (sPrice<0 || bPrice<0 || quantity<0) {
+      sameDisplay.innerHTML = `Enter valid inputs 😐 `;
+      profitDisplay.innerHTML = ``;
+      lossDisplay.innerHTML = ``;
+      document.body.style.backgroundColor = "#eff5fb";
+    }
+    else if (bPrice > sPrice) {
       const values = lossCalculator(bPrice, sPrice, quantity);
       lossDisplay.innerHTML = `You have incured loss of ${values[1]}% and total loss of amount ${values[2]} 😞`;
       profitDisplay.innerHTML = ``;
@@ -32,6 +38,7 @@ button.addEventListener("click", () => {
       lossDisplay.innerHTML = ``;
       document.body.style.backgroundColor = "#eff5fb";
     }
+    
   }
   else{
       alert('Complete the inputs')
