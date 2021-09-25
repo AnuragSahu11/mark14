@@ -1,17 +1,100 @@
-body{background-color: whitesmoke;
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
-.num-inputs{
-    width:min-content;
-    margin-top: 10px;
+
+body {
+  background-color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
-.div-button{
-    margin-top: 50px;
+
+.banner {
+  
+  height: min-content;
+  background-color: #3e8ed0;
+  text-align: center;
 }
-.inputs{
-    margin-top: 50px;
+.banner-body {
+  vertical-align: middle;
 }
-.outputs{
-    margin-top: 50px;
-    font-size: 1.5rem;
+
+.title {
+  font-weight: bold;
+  padding-top: 30px;
+  font-size: 3rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+    padding-bottom: 30px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+
+}
+.inputs {
+  text-align: center;
+}
+.input {
+  padding: 15px;
+  width: 250px;
+  border-radius: 8px;
+  font-size: large;
+  margin-bottom: 6px;
+}
+
+.div-button {
+  text-align: center;
+}
+.button {
+  color: #ffffff;
+  background-color: #3e8ed0;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.red {
+  color: #cc0f35;
+}
+.green {
+  color: #00947e;
+}
+.blue {
+  color: #3e8ed0;
+}
+.num-inputs {
+  margin-top: 10px;
+}
+.div-button {
+  margin-top: 50px;
+}
+.inputs {
+  margin-top: 50px;
+}
+.outputs {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+  opacity: 0.25; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  opacity: 0.25;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  opacity: 0.25;
 }

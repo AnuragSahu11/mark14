@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Stock Profit&Loss</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="hero is-info has-text-centered">
-        <div class="hero-body ">
-          <p class="title is-size-1">
-            Profit or Loss
-          </p>
-          <p class="subtitle">
-            Calculate your profit or less using this tool!
-          </p>
-        </div>
-      </section>
-      <div class="inputs has-text-centered">
-        <input id='input1' class="input num-inputs is-medium" type="numbers" placeholder="Buying price">
-        <br>
-        <input id='input2' class="input num-inputs is-medium" type="numbers" placeholder="Quantity price">
-        <br>
-        <input id='input3' class="input num-inputs is-medium" type="numbers" placeholder="Selling price">
-        <br>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <div class="banner-body">
+        <h1 class="title">Profit or Loss</h1>
+        <p class="subtitle">Calculate your profit or less using this tool!</p>
       </div>
-      <div class="div-button has-text-centered">
-        <button class="button is-info">Tell Me!</button>
-      </div>
-      <div class="outpu">
-        <h1 id='profit' class="outputs has-text-centered has-background-primary-light has-text-primary-dark"></h1>
-        <h1 id='loss' class="outputs has-text-centered has-background-danger-light has-text-danger-dark"></h1>
-        <h1 id='same' class="outputs has-text-centered has-background-info-light has-text-info-dark"></h1>
-      </div>
-      
-    
+    </section>
+    <div class="inputs">
+      <input
+        id="input1"
+        class="input num-inputs"
+        type="numbers"
+        placeholder="Buying price"
+      />
+      <br />
+      <input
+        id="input2"
+        class="input num-inputs"
+        type="numbers"
+        placeholder="Quantity price"
+      />
+      <br />
+      <input
+        id="input3"
+        class="input num-inputs"
+        type="numbers"
+        placeholder="Selling price"
+      />
+      <br />
+    </div>
+    <div class="div-button">
+      <button class="button">Tell Me!</button>
+    </div>
+    <div class="output">
+      <h1
+        id="profit"
+        class="outputs green "
+      ></h1>
+      <h1
+        id="loss"
+        class="outputs red"
+      ></h1>
+      <h1
+        id="same"
+        class="outputs blue"
+      ></h1>
+    </div>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
