@@ -14,7 +14,7 @@ button.addEventListener("click", () => {
     quantity = 1;
   }
   if (bPrice && sPrice) {
-    if (sPrice<0 || bPrice<0 || quantity<0) {
+    if (sPrice<=0 || bPrice<=0 || quantity<=0) {
       sameDisplay.innerHTML = `Enter valid inputs 😐 `;
       profitDisplay.innerHTML = ``;
       lossDisplay.innerHTML = ``;
